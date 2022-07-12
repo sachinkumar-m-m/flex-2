@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;1,500&display=swap');
+
+
+/* basic style */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-size: 50%;
+}
+body{
+    font-family: "poppins", sans-serif;
+}
+a{
+    text-decoration: none;
+    font-weight: 400;
+    /* 1.6*10 = 16px */
+    font-size: 1.6rem;
+    color: brown;
+}
+
+h1,h2,p{
+ margin:1.6rem 0 ;
+}
+h1{
+    font-weight: 800;
+    font-size: 3.6rem;
+}
+h2{
+    font-weight: 800;
+    font-size: 2.6rem;
+}
+p{
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+section{
+   padding: 100px 0;
+}
+
+/* here section */
+header{
+ height: 100vh;
+ background:  url(../images/pexels-bri-schneiter-346529.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ color:brown;
+}
+.log h1{
+    font-size: 3.6rem;
+    color:brown;
+    margin: 0;
+}
+nav{
+    padding: 2% 8%;
+    display: flex;
+    justify-content: space-between;
+}
+nav box-icon{
+    display: none;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li {
+    display: inline-block;
+    margin-left: 2.5rem;
+}
+nav ul li a:hover{
+    color:blue ;
+    transition: 0.5s ease-in-out;
+}
+
+.header-content{
+    width: 50%;
+    position: relative;
+    top: 0%;
+    left: 8%;
+    margin: 2.5rem 0;
+   
+}
+form{
+    margin: 2.5rem 0;
+
+}
+input{
+    font-size: 1.8rem;
+}
+input[type=text],
+input[type=email]{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 1.2rem 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    position: relative;
+}
+input[type=submit]{
+    width: 50%;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+   position: relative;
+}
+input::placeholder{
+    font-size: 1.3rem;
+    color: #ccc;
+}
+.btn{
+       background-color: #4caf50;
+    color: #fff;
+    padding: 8px 10px;
+    margin: 10px 0;
+    border: none;
+    display: inline-block;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+   position: relative;
+}
+.about-left, .about-middel, .about-right{
+    flex-basis: 30%;
+    padding: 1.6rem;
+   
+}
+.about2{
+    background-color: #222;
+    color: whitesmoke;
+}
+.about2-left{
+    flex-basis: 50%;
+}
+.about2-right{
+    flex-basis: 30%;
+}
+.about2 .card{
+  
+    padding: 10px 10px;
+    color: #222;
+    background-color: #cdcdcc;
+    margin: 1.6rem;
+    text-align: center;
+}
+.process .row{
+    justify-content: center;
+}
+.progress-content{
+    margin-top: 100px;
+}
+.progress-bar{
+   
+    width: 90%;
+    height: 2px;
+    background-color: #222;
+    margin-left: 5%;
+    margin: auto;
+     position: relative;
+}
+.progress-bar .c1,
+ .progress-bar .c1, 
+ .progress-bar .c1{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color:blue;
+    position: relative;
+
+}
+.progress-bar .c1{
+    top: -8px;
+    left: 48%;
+   
+}
+.progress-bar .c2{
+    top: -8px;
+    left: 50%;
+}
+.box1, .box2, .box3{
+   padding: 1.8rem;
+}
+.process .box1{
+    text-align: left;
+}
+.process .box2{
+    text-align: center;
+}
+.process .box3{
+    text-align: right;
+}
+.one{
+    color: #4caf50;
+}
+.two{
+    color: #4caf50;
+}
+.three{
+    color: #4caf50;
+}
+
+.tesimony .row .footer{
+    text-align: center;
+    justify-content: center;
+   margin-left: 420px;
+   background-color: grey;
+}
+
+#foot{
+    background-color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media querry */
+
+@media only screen and (max-width:768px){
+    nav{
+        flex-direction: column;
+        position: relative;
+        /* background-color: gray; */
+        width: 100%;
+        height: auto;
+    }
+    header{
+        width: 100%;
+        /* height: auto; */
+    }
+   nav box-icon{
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 32px;
+
+   }
+   nav ul{
+    background:whitesmoke;
+    display: none;
+   }
+   .showmenu{
+    display: block;
+   }
+nav ul li{
+    display: block;
+    padding: 2% 0;
+}
+nav ul li a{
+    color:#222;
+}
+.header-content{
+    display:inline-block;
+    margin-top: 0px;
+    height: auto;
+    position: absolute;
+  width: 100%;   
+}
+.footer{
+    justify-content: center;
+    text-align: center;
+    margin-right: 50%;
+    position: absolute;
+}
+
+}
+
+
+
+/* tab version */
+@media(min-width:768px)and (max-width:1200px){
+    nav{
+        flex-direction: column;
+        position: relative;
+
+
+    }
+}
